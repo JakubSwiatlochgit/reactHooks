@@ -1,15 +1,20 @@
-import { useState } from 'react'
 import ToggleTextUseState from './Components/USEstate/ToggleTextUseState'
 import ReadDataFromInputsUseState from './Components/USEstate/ReadDataFromInputsUseState'
 import ShowTextOn5thClickUseEffect from './Components/USEeffect/ShowTextOn5thClickUseEffect'
 import CallApiUseEffect from './Components/USEeffect/CallApiUseEffect'
-
+import ChangeThemeUseContext from './Components/USEcontext/ChangeThemeUseContext'
+import GlobalState from './context'
 function App() {
   
   return (
     <div>
-      <CallApiUseEffect/>
 
+      <GlobalState>
+        <ChangeThemeUseContext/>
+      </GlobalState>
+      
+
+      <CallApiUseEffect/>
       <ShowTextOn5thClickUseEffect/>
 
       <ReadDataFromInputsUseState/>
