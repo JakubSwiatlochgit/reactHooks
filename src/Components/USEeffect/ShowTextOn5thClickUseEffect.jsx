@@ -14,6 +14,8 @@ const useEffectExample = () => {
     useEffect(() => {
         if(count === 5) setShowText(true)
     },[count])
+
+    
   return (
     <div>
         <h1>UseEffectHook</h1>
