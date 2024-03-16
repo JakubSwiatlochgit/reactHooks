@@ -25,6 +25,7 @@ const FetchApiUseReducer = () => {
 
   return (
     <div>
+    <h1>UseReducer</h1>
       <button onClick={handleFetch}> {state.loading? "Wait..." : "Fetch the post"}</button>
 
       <p>{state.post.title}</p>

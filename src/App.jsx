@@ -5,13 +5,15 @@ import CallApiUseEffect from './Components/USEeffect/CallApiUseEffect'
 import ChangeThemeUseContext from './Components/USEcontext/ChangeThemeUseContext'
 import BasicOperationsUseReducer from './Components/USEreducer/BasicOperationsUseReducer'
 import FetchApiUseReducer from './Components/USEreducer/FetchFromApi/FetchApiUseReducer'
-
+import FormUseReducer from './Components/USEreducer/FormUseReducer/FormUseReducer'
 import GlobalState from './context'
 function App() {
   
   return (
     <div>
+    
 
+      <FormUseReducer/>
       <FetchApiUseReducer/>
       <BasicOperationsUseReducer/>
 
